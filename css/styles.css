@@ -1,0 +1,137 @@
+body{
+
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+h1{
+  font-family: 'Calistoga', cursive;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgba(255,255,255,.4);
+}
+
+button {
+  background-color: #555;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+button:hover {
+  background-color: rgba(255,255,255,.4);
+}
+
+button:focus{
+  outline: none;
+}
+
+fieldset{
+  border: none;
+}
+output{
+  display: inline-block;
+  min-width: 50px;
+}
+
+.content {
+  margin: 2.5%;
+  width: 95%;
+}
+
+.content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tools{
+  float: left;
+  width: 30%;
+}
+.preview{
+  float: right;
+  padding: 0 5%;
+  width: 60%;
+}
+
+.rgbPicker{
+  margin-bottom: 5%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.pallette{
+  color: white;
+  text-align: center;
+}
+
+#color1{
+  background-color: black;
+  border-radius: 20px;
+  padding: 5%;
+  width: 90%;
+}
+
+#color2{
+  background: rgba(255,255,255,.2);
+  height: 100px;
+  width: 120px;
+  margin: 5%;
+  display: inline-block;
+}
+
+#color3{
+  background: rgba(255,255,255,.4);
+  height: 100px;
+  width: 120px;
+  margin: 5%;
+  display: inline-block;
+}
+
+#highlighted{
+  background-color: #aaa;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  padding: 20px 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .tools{
+    width: 100%
+  }
+  .preview{
+    width: 90%
+  }
+}
